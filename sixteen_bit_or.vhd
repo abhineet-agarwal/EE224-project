@@ -3,11 +3,11 @@ use ieee.std_logic_1164.all;
 library work;
 use work.Gates.all;
 
-entity OR_GATE  is
+entity sixteen_bit_or  is
   port (A, B: in std_logic_vector(15 downto 0); OUTP: out std_logic_vector(15 downto 0));
-end entity OR_GATE;
+end entity sixteen_bit_or;
 
-architecture Struct of OR_GATE is
+architecture Struct of sixteen_bit_or is
   signal ABBAR : std_logic;
 begin
   process(a,b)
