@@ -1,8 +1,3 @@
---IITB-RISC EE224 course project by Mithilesh Vaidya, Rishabh Dahale, Anubhav Agarwal and Mihir Kavishwar
---Memory is asynchronous read and so there is no read signal
---It gives 16-bit data in one clock cycle
---The preloaded memory computes the instructions given in the documentation
-
 library std;
 use std.standard.all;
 
