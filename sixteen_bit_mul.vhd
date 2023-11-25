@@ -3,11 +3,11 @@ use ieee.std_logic_1164.all;
 library work;
 use work.Gates.all;
 
-entity multiplier  is
+entity sixteen_bit_mul  is
   port (A3,A2,A1,A0,B3,B2,B1,B0: in std_logic; m: out std_logic_vector(7 downto 0));
-end entity multiplier;
+end entity sixteen_bit_mul;
 
-architecture Struct of multiplier is
+architecture Struct of sixteen_bit_mul is
 
    component fourbitfa is
      port(A3,A2,A1,A0,B3,B2,B1,B0: in std_logic;
