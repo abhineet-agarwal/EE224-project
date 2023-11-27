@@ -72,7 +72,7 @@ begin
 		);
 		mul_instance: sixteen_bit_mul
 		port map (
-			A3 => A(3), A2=>A(2), A1=>A(1), A0=>A(0), B3 => B(3), B2=>B(2), B1=>B(1), B0=>B(0), m => s5(7 downto 0)
+			A3 => A(3), A2=>A(2), A1=>A(1), A0=>A(0), B3 => B(3), B2=>B(2), B1=>B(1), B0=>B(0), m => s5(15 downto 0)
 		);
 		invert: BitInverter
 		port map(input_bits=>A, output_bits=>Abar);
