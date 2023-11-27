@@ -37,6 +37,7 @@ begin
  fbfa1 : fourbitfa port map(A3=>'0',A2=>a3b0,A1=>a2b0,A0=>a1b0,B3=>a3b1,B2=>a2b1,B1=>a1b1,B0=>a0b1,S3=>s3,S2=>s2,S1=>s1,S0=>m(1),S4=>s4) ;
  fbfa2 : fourbitfa port map(A3=>s4,A2=>s3,A1=>s2,A0=>s1,B3=>a3b2,B2=>a2b2,B1=>a1b2,B0=>a0b2,S3=>s7,S2=>s6,S1=>s5,S0=>m(2),S4=>s8) ;
  fbfa3 : fourbitfa port map(A3=>s8,A2=>s7,A1=>s6,A0=>s5,B3=>a3b3,B2=>a2b3,B1=>a1b3,B0=>a0b3,S3=>m(6),S2=>m(5),S1=>m(4),S0=>m(3),S4=>m(7)) ;
- 
+ buff8bit : buff port map("00000000",m(15 downto 8));
+-- ensure that GATES.vhdl has an 8-BIT buffer entity named "buff"
  
 end Struct;
